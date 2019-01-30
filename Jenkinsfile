@@ -6,5 +6,10 @@ pipeline {
         echo 'hello from build'
       }
     }
+    stage('test') {
+      steps {
+        sh 'mvn -v'
+      }
+    }
   }
 }
